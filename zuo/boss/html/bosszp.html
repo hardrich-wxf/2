@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="reset.css">
+	<style>
+		html,body{
+		width: 100%;
+		height: 100%;
+		background-color: #f3f3f3;
+	}
+	.one{
+		width: 100%;
+		height: 100px;
+		background-color: #fff;
+	}
+	.header{
+
+		height: 100px;
+		width: 1170px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.header2{
+		height: 55px;
+		padding-top: 23px;
+
+	}
+	.logo{
+		width: 54px;
+		height: 54px;
+		background-color: #53cac3;
+		border-radius: 5px;
+		float: left;
+		margin-right: 39px;
+	}
+	.txt0{
+		font-size: 19px;
+		line-height: 20px;
+		color: #fff;
+	}
+	.txt{
+		height: 54px;
+	}
+	.txt2{
+		font-size: 16px;
+		line-height: 54px;
+		margin-right: 39px;
+		float: left;
+	}
+	.txt2:hover{
+		color: #53cac3;
+	}
+	.txt3{
+		width: 100px;
+		border-right: 1px solid #e5e5e5;
+		height: 20px;
+		position: absolute;
+		top: 40px;
+		right: 469px;
+	}
+	.txt4{
+		height: 20px;
+		font-size: 13px;
+		line-height: 20px;
+		color: #000;
+		margin-left: 14px;
+	}
+	.txt5{
+		width: 100px;
+		height: 20px;
+		position: absolute;
+		top: 40px;
+		right: 360px;
+	}
+	.two{
+		width: 100%;
+    	background-color: #f3f3f3;
+	}
+	.zhuce{
+		width: 100%;
+		height: 38px;
+		background-color: #fdf8e3;
+		border-top: 1px solid #ffe7b8;
+		border-bottom:1px solid  #ffe7b8;
+		margin-bottom: 15px;
+		margin-top: 7px;
+	}
+	.zhuce1{
+		width: 290px;
+		line-height: 38px;
+		font-size: 12px;
+		color: #b05a2e;
+		margin: 0 auto;
+
+	}
+	.swipe-box{
+		width: 1170px;
+		height:240px;
+		margin: 0 auto;
+		margin-bottom: 15px;
+		position: relative;
+		overflow: hidden;
+	}
+	.swipe-content{
+		width: 3710px;
+		height: 240px;
+		position: absolute;
+	}
+	.por1{
+		width: 1170px;
+		height:240px;
+		margin: 0 auto;
+
+	}
+	.threesec{
+		width: 1170px;
+		margin:0 auto;
+	}
+	.left{
+		float: left;
+		width: 263px;
+		background-color: #fff;
+		border: 1px solid #dcdcdc;
+		/*height: 1406px;*/
+		height: auto;
+	}
+	.tit1{
+		width: 263px;
+		height: 35px;
+		font-size: 18px;
+		color: #53cac3;
+		line-height: 35x;
+		margin-left: 14px;
+	}
+	.tit2{
+		width:100%;
+		height: 53px;
+		margin-bottom: 25px;
+	}
+	.tit3{
+		font-size: 10px;
+		color: #a599a5;
+		margin-right: 24px;
+		line-height: 33px;
+	}
+	.tit4{
+		margin-left: 14px; 
+	}
+	.er{
+		margin-left: 14px
+	}
+	.right{
+		width: 890px;
+		height: auto;
+		background-color: #f3f3f3;
+		float: right;
+	}
+	.one1{
+		width: 890px;
+		height: 58px;
+		border: 1px solid #e0e0e0;
+		background-color: #fff;
+		margin-bottom: 20px;
+	}
+	.one2{
+		width: 780px;
+		height: 58px;
+		border: none;
+		font-size: 19px;
+		color: #d6d8e1;
+	}
+	.one3{
+		color: #fff;
+		background-color: #5ecfc9;
+		width: 104px;
+		height: 45px;
+		border: none;
+	}
+	.two1{
+		width: 100%;
+		height: 127px;
+		background-color: #fff;
+		border: 1px solid #e0e0e0;
+		margin-bottom: 15px;
+	}
+	.twoleft{
+		float: left;
+		width: 665px;
+		height: 127px;
+		margin-left: 18px;
+		/*background-color: yellow;*/
+	}
+	.tworight{
+		width: 192px;
+		height: 127px;
+		float: right;
+		/*background-color: red;*/
+		margin-right: 15px;
+	}
+	.tlone{
+		height: 60px;
+		font-size: 19px;
+		line-height: 60px;
+		color: #000;
+	}
+	.tltwo{
+		height: 20px;
+		line-height: 20px;
+		font-size: 20px;
+		color: #e85253;
+	}
+	.tlthree{
+		height: 17px;
+	}
+	.tlthree2{
+		width: 43px;
+		height: 17px;
+		line-height: 17px;
+		font-size: 15px;
+		color: #656565;
+		float: left;
+		text-align: center;
+		border-right:1px solid #ececf2;
+	}
+	.threesec{
+		width: 1171px;
+		margin: 0 auto;
+		height: 1506px;
+	}
+	.tlthree3{
+		border-right: none;
+	}
+	.trone{
+		margin-top: 16px;
+
+	}
+	.tropor{
+		width: 50px;
+		height: 50px;
+		margin-left:143px; 
+	}
+	.trtwo{
+		height: 12px;
+		line-height: 12px;
+		font-size: 12px;
+		color: #a7a7a7;
+		text-align: right;
+	}
+	.trthree{
+		margin-top: 10px;
+	}
+	.trt1{
+		width: 68px;
+		float: left;
+		line-height: 21px;
+		text-align: center;
+		font-size: 11px;
+		color: #a7a7a7;
+	}
+	.trt2{
+		width: 92px;
+		float: left;
+		font-size: 11px;
+		line-height: 21px;
+		color: #a7a7a7;
+		text-align: center;
+		border-left: 1px solid #ececf2;
+	}
+	.trt3{
+		width: 30px;
+		height: 20px;
+		float: left;
+		background-color: #6bd52c;
+		font-size: 12px;
+		line-height: 20px;
+		color: #fff;
+		text-align: center;
+		
+	}
+	.two2{
+		width: 872px;
+		height: 110px;
+		background-color: #fdf9e5;
+		padding-left: 22px;
+	}
+	/*.t2left{
+		width: 630px;
+		height: 100px;
+		float: left;
+		font-size: 15px;
+		line-height: 100px;
+	}*/
+	.t2left2{
+		float: left;
+		font-size: 15px;
+		line-height: 100px;
+		color: #5fd3c8;
+		
+	}
+	.t2left3{
+		color: #f89a28;
+	}
+	.t2right{
+		width: 247px;
+		height: 80px;
+		float:right;
+		margin-right: 17px;
+		/*background-color: pink;*/
+		margin-top: 8px;
+	}
+	.t2rleft{
+		width: 157px;
+		height: 58px;
+		float: left;
+		font-size: 16px;
+		color: #5fd3c8;
+		line-height: 16px;
+		text-align: right;
+		padding-top: 22px; 
+	}
+	.pic{
+		width: 79px;
+		height: 80px;
+		float: right;
+	}
+	.footer{
+		width:100%;
+		height:232px;
+		background-color: #000;
+		position:relative;
+	}
+	.footer2{
+		height: 21px;
+		width: 377px;
+		position: absolute;
+		top: 66px;
+		left: 35%;
+		/*background-color: #fff;*/
+	}
+	.fottit{
+		font-size: 17px;
+		color: #fff;
+		margin-right: 28px;
+		line-height: 21px;
+	}
+	.fottit2{
+		font-size: 14px;
+		color: #fff;
+		position: absolute;
+		top: 126px;
+		left: 28%;
+	}
+	.fottit3{
+		font-size: 14px;
+		color: #fff;
+		position: absolute;
+		bottom: 65px;
+		left: 35%;
+	}
+
+	</style>
+</head>
+<body>
+ <div class="one">
+		<div class="header">
+			<div class="header2">
+			<div class="logo">
+				<p class="txt0">BOSS直聘</p>
+			</div>
+			<div class="txt">
+					<a href="" class="txt2">首页</a>
+					<a href="" class="txt2">求职</a>
+					<a href="" class="txt2">扫码登陆</a>
+					<a href="" class="txt2">道具兑换</a>
+				</div>
+				<div class="txt3"><img src="../img/boss1.jpg" alt=""><span class="txt4">Android</span></div>
+				<div class="txt5"><img src="../img/apple.png" alt=""><span class="txt4">iphone</span></div>
+		</div>
+		</div>
+	</div>
+	
+	<div class="two">
+	    <div class="zhuce">
+	    	<div class="zhuce1">一键注册Boss直聘，与Boss直接开始沟通~</div>
+	    </div>
+		<div class="swipe-box">
+			<div class="swipe-content">
+			<img src="../img/banner.png" alt="" class="por1">
+			<img src="../img/one2.png" alt="" class="por1">
+
+			<img src="../img/banner.png" alt="" class="por1">
+
+			</div>
+		</div>
+	</div>
+		<div class="threesec" class="threesec1">
+			<div class="left">
+				<div class="tit1">技术</div>
+				<div class="tit2">
+				<span class="tit3 tit4">Java</span>
+				<span class="tit3">PHP</span>
+				<span class="tit3">Web前端</span>
+				<p class="er"><span class="tit3">Android</span></p>
+				</div>
+				<div class="tit1">产品</div>
+				<div class="tit2">
+				<span class="tit3 tit4">产品经理</span>
+				<span class="tit3">移动产品经理</span>
+				<p class="er">
+				<span class="tit3">产品助理</span>
+				<span class="tit3 ">产品总监</span></p>
+				</div>
+				<div class="tit1">设计</div>
+				<div class="tit2">
+				<span class="tit3 tit4">平面设计师</span>
+				<span class="tit3">美工</span>
+				<p class="er">
+					<span class="tit3">视觉设计师</span>
+				    <span class="tit3">ui设计师</span>
+				</p>
+				
+				</div>
+				<div class="tit1">运营</div>
+				<div class="tit2">
+				<span class="tit3 tit4">客服专员</span>
+				<span class="tit3">新媒体运营</span>
+				<p class="er">
+					<span class="tit3">文案策划</span>
+				    <span class="tit3">产品运营</span>
+				</p>
+				</div>
+				<div class="tit1">市场</div>
+				<div class="tit2">
+				<span class="tit3 tit4">市场销售</span>
+				<span class="tit3">市场推广</span>
+				<p class="er">
+					<span class="tit3">商务渠道</span>
+				    <span class="tit3">网络营销</span>
+				</p>
+				</div>
+				<div class="tit1">职能/高级管理</div>
+				<div class="tit2">
+				<span class="tit3 tit4">人力资源</span>
+				<span class="tit3">前台</span>
+				<span class="tit3">助力/文员</span>
+				<p class="er">
+				    <span class="tit3">人事/hr</span>
+				</p>
+				</div>
+				<div class="tit1">销售</div>
+				<div class="tit2">
+				    <span class="tit3 tit4">销售专员</span>
+				    <span class="tit3">销售经理</span> 
+				<p class="er">
+				   <span class="tit3">销售顾问</span>
+				    <span class="tit3">电话销售</span>
+				</p>
+				</div>
+				<div class="tit1">传媒</div>
+				<div class="tit2">
+				    <span class="tit3 tit4">编辑</span>
+				    <span class="tit3">文案</span>
+				    <span class="tit3">主此人/主播/dj</span>
+				<p class="er">
+				    <span class="tit3">后期制作</span>
+				</p>
+				</div>
+				<div class="tit1">金融</div>
+				<div class="tit2">
+				    <span class="tit3 tit4">理财顾问</span>
+				    <span class="tit3">投资经理</span>    
+				<p class="er">
+				    <span class="tit3">理财顾问</span>
+				    <span class="tit3">客户经理</span>
+				</p>
+				</div>
+				<div class="tit1">汽车</div>
+				<div class="tit2">
+				    <span class="tit3 tit4">汽车销售</span>
+				    <span class="tit3">汽车维修</span>	    
+				<p class="er">
+				    <span class="tit3">汽车美容</span>
+				    <span class="tit3">汽车售后服务</span>
+				</p>
+				</div>
+				<div class="tit1">咨询/翻译/法律</div>
+				<div class="tit2">
+				    <span class="tit3 tit4">英语翻译</span>
+				    <span class="tit3">公司法务</span>		    
+				<p class="er">
+				    <span class="tit3">猎头顾问</span>
+				    <span class="tit3">企业管理咨询</span>
+				</p>
+				</div>
+				<div class="tit1">实习生/培训生/储备干部</div>
+				<div class="tit2">
+				    <span class="tit3 tit4">实习生</span>
+				    <span class="tit3">储备干部</span>			    
+				<p class="er">
+				    <span class="tit3">管理培训生</span>
+				</p>
+				</div>
+			</div>
+			<div class="right">
+				<form action="" class="one1">
+					<input type="text" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;搜索公司、BOSS或职位..." class="one2">
+					<input type="submit" value="搜索" class="one3">
+				</form>
+				<div class="two1">
+					<div class="twoleft">
+						<p class="tlone">【研发中心】hadoop研发工程</p>
+						<p class="tltwo">24k-60k</p>
+						<p class="tlthree">
+							<div class="tlthree2">北京</div>
+							<div class="tlthree2">1-3年</div>
+							<div class="tlthree2 tlthree3">本科</div>
+						</p>
+					</div>
+					<div class="tworight">
+						<p class="trone"><img src="../img/peo.png" alt="" class="tropor"></p>
+						<p class="trtwo">唐桂辉</p>
+						<p class="trthree">
+							<div class="trt1">搜狐</div>
+							<div class="trt2">研发工程师</div>
+							<div class="trt3">在线</div>
+						</p>
+					</div>
+				</div>
+				<div class="two1">
+					<div class="twoleft">
+						<p class="tlone">【研发中心】hadoop研发工程</p>
+						<p class="tltwo">24k-60k</p>
+						<p class="tlthree">
+							<div class="tlthree2">北京</div>
+							<div class="tlthree2">1-3年</div>
+							<div class="tlthree2 tlthree3">本科</div>
+						</p>
+					</div>
+					<div class="tworight">
+						<p class="trone"><img src="../img/peo.png" alt="" class="tropor"></p>
+						<p class="trtwo">唐桂辉</p>
+						<p class="trthree">
+							<div class="trt1">搜狐</div>
+							<div class="trt2">研发工程师</div>
+							<div class="trt3">在线</div>
+						</p>
+					</div>
+				</div>
+				<div class="two1">
+					<div class="twoleft">
+						<p class="tlone">【研发中心】hadoop研发工程</p>
+						<p class="tltwo">24k-60k</p>
+						<p class="tlthree">
+							<div class="tlthree2">北京</div>
+							<div class="tlthree2">1-3年</div>
+							<div class="tlthree2 tlthree3">本科</div>
+						</p>
+					</div>
+					<div class="tworight">
+						<p class="trone"><img src="../img/peo.png" alt="" class="tropor"></p>
+						<p class="trtwo">唐桂辉</p>
+						<p class="trthree">
+							<div class="trt1">搜狐</div>
+							<div class="trt2">研发工程师</div>
+							<div class="trt3">在线</div>
+						</p>
+					</div>
+				</div>
+				<div class="two1">
+					<div class="twoleft">
+						<p class="tlone">【研发中心】hadoop研发工程</p>
+						<p class="tltwo">24k-60k</p>
+						<p class="tlthree">
+							<div class="tlthree2">北京</div>
+							<div class="tlthree2">1-3年</div>
+							<div class="tlthree2 tlthree3">本科</div>
+						</p>
+					</div>
+					<div class="tworight">
+						<p class="trone"><img src="../img/peo.png" alt="" class="tropor"></p>
+						<p class="trtwo">唐桂辉</p>
+						<p class="trthree">
+							<div class="trt1">搜狐</div>
+							<div class="trt2">研发工程师</div>
+							<div class="trt3">在线</div>
+						</p>
+					</div>
+				</div>
+				<div class="two1">
+					<div class="twoleft">
+						<p class="tlone">【研发中心】hadoop研发工程</p>
+						<p class="tltwo">24k-60k</p>
+						<p class="tlthree">
+							<div class="tlthree2">北京</div>
+							<div class="tlthree2">1-3年</div>
+							<div class="tlthree2 tlthree3">本科</div>
+						</p>
+					</div>
+					<div class="tworight">
+						<p class="trone"><img src="../img/peo.png" alt="" class="tropor"></p>
+						<p class="trtwo">唐桂辉</p>
+						<p class="trthree">
+							<div class="trt1">搜狐</div>
+							<div class="trt2">研发工程师</div>
+							<div class="trt3">在线</div>
+						</p>
+					</div>
+				</div>
+				<div class="two1">
+					<div class="twoleft">
+						<p class="tlone">【研发中心】hadoop研发工程</p>
+						<p class="tltwo">24k-60k</p>
+						<p class="tlthree">
+							<div class="tlthree2">北京</div>
+							<div class="tlthree2">1-3年</div>
+							<div class="tlthree2 tlthree3">本科</div>
+						</p>
+					</div>
+					<div class="tworight">
+						<p class="trone"><img src="../img/peo.png" alt="" class="tropor"></p>
+						<p class="trtwo">唐桂辉</p>
+						<p class="trthree">
+							<div class="trt1">搜狐</div>
+							<div class="trt2">研发工程师</div>
+							<div class="trt3">在线</div>
+						</p>
+					</div>
+				</div>
+				<div class="two1">
+					<div class="twoleft">
+						<p class="tlone">【研发中心】hadoop研发工程</p>
+						<p class="tltwo">24k-60k</p>
+						<p class="tlthree">
+							<div class="tlthree2">北京</div>
+							<div class="tlthree2">1-3年</div>
+							<div class="tlthree2 tlthree3">本科</div>
+						</p>
+					</div>
+					<div class="tworight">
+						<p class="trone"><img src="../img/peo.png" alt="" class="tropor"></p>
+						<p class="trtwo">唐桂辉</p>
+						<p class="trthree">
+							<div class="trt1">搜狐</div>
+							<div class="trt2">研发工程师</div>
+							<div class="trt3">在线</div>
+						</p>
+					</div>
+				</div>
+				<div class="two1">
+					<div class="twoleft">
+						<p class="tlone">【研发中心】hadoop研发工程</p>
+						<p class="tltwo">24k-60k</p>
+						<p class="tlthree">
+							<div class="tlthree2">北京</div>
+							<div class="tlthree2">1-3年</div>
+							<div class="tlthree2 tlthree3">本科</div>
+						</p>
+					</div>
+					<div class="tworight">
+						<p class="trone"><img src="../img/peo.png" alt="" class="tropor"></p>
+						<p class="trtwo">唐桂辉</p>
+						<p class="trthree">
+							<div class="trt1">搜狐</div>
+							<div class="trt2">研发工程师</div>
+							<div class="trt3">在线</div>
+						</p>
+					</div>
+				</div>
+				<div class="two1">
+					<div class="twoleft">
+						<p class="tlone">【研发中心】hadoop研发工程</p>
+						<p class="tltwo">24k-60k</p>
+						<p class="tlthree">
+							<div class="tlthree2">北京</div>
+							<div class="tlthree2">1-3年</div>
+							<div class="tlthree2 tlthree3">本科</div>
+						</p>
+					</div>
+					<div class="tworight">
+						<p class="trone"><img src="../img/peo.png" alt="" class="tropor"></p>
+						<p class="trtwo">唐桂辉</p>
+						<p class="trthree">
+							<div class="trt1">搜狐</div>
+							<div class="trt2">研发工程师</div>
+							<div class="trt3">在线</div>
+						</p>
+					</div>
+				</div>
+				<div class="two2">
+					
+						<span class="t2left2">还有超过<span class="t2left3">100万</span>BOSS正在直聘</span>
+						<div class="t2right">
+							<div class="t2rleft">下载BOSS直聘APP查看那更多职位</div>
+							<img src="../img/bosszp.png" alt="" class="pic">
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+		<div class="footer2">
+			<a href="" class="fottit">首页</a>
+			<a href="" class="fottit">Boss网页版</a>
+			<a href="" class="fottit">文章 </a>
+			<a href="" class="fottit">关于我们</a>
+		</div>
+		<p class="fottit2">Copyright © 2016 kanzhun.com京ICP备14013441号-1 京公网安备11010502027210</p>
+		<p class="fottit3">kanzhun.com.保留所有版权. 使用这些服务遵守用户协议</p>
+	</div>
+	 <script>
+	    var swipeEle = document.querySelector('.swipe-content');
+      var w =1170;
+      var timerInterval, timerDuration;
+      var start, end, tween;
+      var index = 0; 
+      var interval = 300;
+
+      function next() {
+
+        clearInterval(timerDuration);
+        index++;
+    
+        if (index == 3) {
+          swipeEle.style.left = 0;
+          index = 1;
+        }
+
+        end = -index * w;
+        timerDuration = setInterval(() => {
+          start = swipeEle.offsetLeft;
+          tween = (end - start) / 8;
+
+          tween = tween > 0 ? Math.ceil(tween) : Math.floor(tween);
+          start += tween;
+          if (start == end) {
+            clearInterval(timerDuration);
+            timerInterval = setTimeout(next, interval);
+          }
+
+          swipeEle.style.left = start + 'px';
+        }, 50);
+      }
+
+      function start() {
+        timerInterval = setTimeout(next, interval);
+      }
+
+      function stop() {
+        clearTimeout(timerInterval);
+      }
+
+      start();
+	 </script>
+</body>
+</html> 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>注册</title>
+    <style>
+      .box {
+        width: 400px;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      .box .row {
+        width: 100px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <form id="myform">
+        <div class="row">
+          <label for="username">用户名</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="用户名"
+            required
+          />
+        </div>
+        <div class="row">
+          <label for="password">密 码</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="密码"
+            required
+          />
+        </div>
+        <div class="row">
+          <label for="repasswd">确认密码</label>
+          <input
+            type="password"
+            name="repasswd"
+            id="repasswd"
+            placeholder="确认密码"
+            required
+          />
+        </div>
+        <div class="row">
+          <button>注册</button>
+        </div>
+      </form>
+    </div>
+    <script src="./ajax.js"></script>
+    <script>
+      var myformEle = document.getElementById('myform');
+
+      myformEle.addEventListener('submit', function(e) {
+        e.preventDefault(); 
+
+        var username = this.username.value;
+        var password = this.password.value;
+        var repasswd = this.repasswd.value;
+
+        ajax({
+          type: 'post',
+          url: 'register.php',
+          data: { username, password, repasswd }
+        }).then(res => {
+
+          alert(res.msg);
+          switch (res.code) {
+            case 2:
+              location = '/login.html';
+              break;
+            case -1:
+              this.username.value = '';
+              this.username.focus();
+              break;
+            case -2:
+              this.repasswd.value = '';
+              this.repasswd.focus();
+            default:
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

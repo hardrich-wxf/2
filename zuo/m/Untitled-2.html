@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>登录</title>
+    <style>
+      .box {
+        width: 400px;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      .box .row {
+        width: 100px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <form id="myform">
+        <div class="row">
+          <label for="username">用户名</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="用户名"
+            required
+          />
+        </div>
+        <div class="row">
+          <label for="password">密 码</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="密码"
+            required
+          />
+        </div>
+        <div class="row">
+          <button>登录</button>
+        </div>
+      </form>
+    </div>
+    <script src="./ajax.js"></script>
+    <script src="./cookie.js"></script>
+    <script>
+      var formEle = document.getElementById('myform');
+
+      formEle.onsubmit = function(e) {
+        e.preventDefault();
+
+        var username = this.username.value;
+        var password = this.password.value;
+
+        ajax({
+          type: 'post',
+          url: 'login.php',
+          data: { username, password }
+        }).then(res => {
+          alert(res.msg);
+          if (res.code == 2) {
+            cookie('logged', true, { maxAge: 30 * 60 });
+            location = '/'; 
+          }
+        });
+      };
+    </script>
+  </body>
+</html>

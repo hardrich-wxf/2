@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+}
+.fl{
+    float: left;
+}
+.clear::after{
+    content: "";
+    display: block;
+    height: 0;
+    clear:both;
+};
